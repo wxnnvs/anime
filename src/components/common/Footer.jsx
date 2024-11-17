@@ -46,7 +46,8 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="font-semibold mb-4">Legal</h3>
-            <ul className="space-y-2 text-sm">
+            <p>We do not host any copyrighted material, everything is served from 3rd parties.</p>
+            {/*<ul className="space-y-2 text-sm">
               <li>
                 <Link href="/terms" className="hover:underline">
                   Terms of Service
@@ -62,9 +63,9 @@ export default function Footer() {
                   Copyright
                 </Link>
               </li>
-            </ul>
+            </ul>*/}
           </div>
-          <div className="space-y-4">
+          {/*<div className="space-y-4">
             <h3 className="font-semibold">Stay Updated</h3>
             <form className="flex space-x-2">
               <Input
@@ -106,7 +107,7 @@ export default function Footer() {
                 <span className="sr-only">YouTube</span>
               </Link>
             </div>
-          </div>
+          </div>*/}
         </div>
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Sat0ri Anime. All rights reserved.</p>
