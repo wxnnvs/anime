@@ -61,9 +61,10 @@ export default function Header() {
     },
     {
       href: "/pages/Manga",
-      label: "Manga",
+      label: "Manga (coming soon)",
       icon: Book,
       active: pathname.includes("Manga"),
+      disabled: true,
     },
   ];
 
@@ -116,16 +117,16 @@ export default function Header() {
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <span className="hidden font-bold text-xl sm:inline-block">
-              AnymeY
+              Sat0ri Anime
             </span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium ml-5">
             {navItems.map((item) => (
               <Link
                 key={item.href}
-                href={item.href}
-                className={`flex items-center space-x-2 transition-colors hover:text-primary ${
-                  item.active ? "text-primary" : "text-muted-foreground"
+                href={item.disabled ? "#" : item.href}
+                className={`flex items-center space-x-2 transition-colors ${
+                  item.disabled ? "text-muted cursor-not-allowed" : item.active ? "text-primary" : "text-muted-foreground hover:text-primary"
                 } active:shadow-glow`}
               >
                 <item.icon className="h-4 w-4" />
@@ -189,7 +190,7 @@ export default function Header() {
             />
           </div>
           <nav className="flex items-center">
-            <Link
+            {/*<Link
               href="https://github.com/RyanYuuki/anyme-next"
               target="_blank"
               rel="noopener noreferrer"
@@ -198,7 +199,7 @@ export default function Header() {
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Button>
-            </Link>
+            </Link>*/}
             <ModeToggle />
           </nav>
         </div>
@@ -213,7 +214,7 @@ function MobileNav({ navItems }) {
   return (
     <div className="grid gap-6 p-6 pt-20">
       <Link href="/" className="flex items-center space-x-2">
-        <span className="font-bold">AnymeY</span>
+        <span className="font-bold">Sat0ri Anime</span>
       </Link>
       <nav className="grid gap-4">
         {navItems.map((item) => (
@@ -265,12 +266,12 @@ function SearchDialog({
       </DialogTrigger>
       <DialogContent className="max-md:w-[95%] md:max-w-[700px] lg:max-w-[900px]">
         <DialogHeader>
-          <DialogTitle>Search AnymeY</DialogTitle>
+          <DialogTitle>Search Sat0ri Anime</DialogTitle>
         </DialogHeader>
         <Tabs defaultValue="anime" className="mt-4">
           <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="anime">Anime</TabsTrigger>
-            <TabsTrigger value="manga">Manga</TabsTrigger>
+            <TabsTrigger value="manga" disabled>Manga (coming soon)</TabsTrigger>
           </TabsList>
           <TabsContent value="anime" className="mt-4">
             <SearchTab

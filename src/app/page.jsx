@@ -16,10 +16,10 @@ export default function Component() {
                     Featured
                   </div>
                   <h1 className="mt-2 text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-                    Dive into the World of Anime and Manga
+                    Dive into the World of Anime {/*and Manga*/}
                   </h1>
                   <p className="mt-4 text-muted-foreground md:text-xl dark:text-muted-foreground">
-                    Explore the latest and greatest anime and manga content,
+                    Explore the latest and greatest anime{/*and manga*/} content,
                     updated daily.
                   </p>
                 </div>
@@ -31,13 +31,13 @@ export default function Component() {
                   >
                     Explore Anime
                   </Link>
-                  <Link
+                  {/*<Link
                     href="/pages/Manga"
                     className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 dark:bg-background dark:border-input dark:text-foreground dark:hover:bg-accent dark:hover:text-accent-foreground"
                     prefetch={false}
                   >
                     Explore Manga
-                  </Link>
+                  </Link>*/}
                 </div>
               </div>
               <img
@@ -50,7 +50,7 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+        {/*<section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="container">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -186,7 +186,7 @@ export default function Component() {
               </Link>
             </div>
           </div>
-        </section>
+        </section>*/}
       </main>
     </div>
   );
