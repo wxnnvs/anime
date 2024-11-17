@@ -40,10 +40,12 @@ const StreamingPage = () => {
   useEffect(() => {
     const loadData = async () => {
       setIsLoading(true);
-      const MetaData = await FetchAnimeByAniwatchID(id);
+      const json = await FetchAnimeByAniwatchID(id);
+      const MetaData = json.data;
       setAnimeData(MetaData);
       if (MetaData) {
-        const EpisodesData = await FetchEpisodesByMappedID(id);
+        const json = await FetchEpisodesByMappedID(id);
+        const EpisodesData = json.data;
         setEpisodesData(EpisodesData.episodes);
         fetchEpisodeImages(MetaData.anime.info.anilistId);
       }
@@ -70,11 +72,12 @@ const StreamingPage = () => {
       try {
         if (episodesData) {
           setEpisodeLoading(true);
-          const episodeSrc = await FetchEpisodeLinksByMappedID(
+          const json = await FetchEpisodeLinksByMappedID(
             episodesData[currentEpisode - 1].episodeId,
             activeServer,
             episodeType
           );
+          const episodeSrc = json.data;
           setCaptionsData(episodeSrc.tracks);
           setEpisodeSrc(episodeSrc.sources[0].url);
         }

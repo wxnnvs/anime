@@ -1,6 +1,8 @@
-const proxy_url = process.env.PROXY_URL;
-const consumet_api_url = process.env.CONSUMET_URL +  "meta/anilist/";
-const aniwatch_api_url = process.env.ANIWATCH_URL;
+require("dotenv").config();
+
+const proxy_url = "https://goodproxy.goodproxy.workers.dev/fetch?url=";
+const consumet_api_url = "https://consumet-brown.vercel.app/" +  "meta/anilist/";
+const aniwatch_api_url = "https://aniwatch-api-mauve.vercel.app/api/v2/hianime/";
 let isRomaji = false;
 
 if (typeof window !== "undefined") {
@@ -16,9 +18,9 @@ function toggleRomaji(state) {
 
 async function fetchHomePageAniwatch() {
   try {
-    const response = await fetch(`${aniwatch_api_url}home`);
+    const response = await fetch(`${proxy_url}${aniwatch_api_url}home`);
     if (response.ok) {
-      return await response.json();
+      return response;
     } else {
       console.error(
         `Error fetching data from Aniwatch API: ${response.status}`

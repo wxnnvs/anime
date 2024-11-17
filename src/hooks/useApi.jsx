@@ -1,9 +1,12 @@
 /* eslint-disable no-unused-vars */
 import { jaroWinklerDistance } from "./jaro-winkler";
-const PROXY = process.env.PROXY_URL;
-const apiLink = process.env.CONSUMET_URL;
-const BASE_URL = process.env.CONSUMET_URL + "meta/anilist/";
-const ANIWATCH_URL = process.env.HIANIME_URL;
+
+require("dotenv").config();
+
+const PROXY = "https://goodproxy.goodproxy.workers.dev/fetch?url=";
+const apiLink = "https://consumet-brown.vercel.app/";
+const BASE_URL = "https://consumet-brown.vercel.app/" +  "meta/anilist/";
+const ANIWATCH_URL = "https://aniwatch-api-mauve.vercel.app/api/v2/hianime/";
 const API_KEY = "e2f1fb12caa883224a8363dc0329b3bc";
 const BASE_MOVIE_URL = "https://api.themoviedb.org";
 const MANGA_URL = process.env.MANGA_URL + "api/";
@@ -182,7 +185,7 @@ export const GetMangaTop = async (count, page = 1) => {
 export const MapAnimeByTitle = async (title) => {
   try {
     const response = await fetch(
-      `${ANIWATCH_URL}search?q=${encodeURIComponent(title)}`
+      `${PROXY}${ANIWATCH_URL}search?q=${encodeURIComponent(title)}`
     );
 
     const data = await response.json();
@@ -226,7 +229,7 @@ export const MapAnimeByTitle = async (title) => {
 };
 
 export const FetchEpisodesByMappedID = async (id) => {
-  const response = await fetch(`${ANIWATCH_URL}anime/${id}/episodes`);
+  const response = await fetch(`${PROXY}${ANIWATCH_URL}anime/${id}/episodes`);
   const data = await response.json();
   return data;
 };
@@ -237,7 +240,7 @@ export const FetchEpisodeLinksByMappedID = async (
   category = "sub"
 ) => {
   const response = await fetch(
-    `${ANIWATCH_URL}episode/sources?animeEpisodeId=${id}?server=${server}&category=${category}`
+    `${PROXY}${ANIWATCH_URL}episode/sources?animeEpisodeId=${id}?server=${server}&category=${category}`
   );
   const data = await response.json();
   return data;
@@ -287,7 +290,7 @@ export const AdvancedSearch = async (
   score = "good"
 ) => {
   const genresParam = genres ? genres : "";
-  const queryUrl = `${ANIWATCH_URL}search?q=${query}&genres=${genresParam}&type=${type}&sort=${sort}&season=${season}&language=${lang}&status=${status}&rated=${rating}&start_date=${y}-${m}-${d}&end_date=${ey}-${em}-${ed}&score=${score}`;
+  const queryUrl = `${PROXY}${ANIWATCH_URL}search?q=${query}&genres=${genresParam}&type=${type}&sort=${sort}&season=${season}&language=${lang}&status=${status}&rated=${rating}&start_date=${y}-${m}-${d}&end_date=${ey}-${em}-${ed}&score=${score}`;
   const resp = await fetch(queryUrl);
   const data = await resp.json();
   return data.animes;

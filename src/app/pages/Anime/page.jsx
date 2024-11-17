@@ -22,7 +22,9 @@ const page = () => {
 
   useEffect(() => {
     const loadData = async () => {
-      const data = await fetchHomePage();
+      const response = await fetchHomePage();
+      const json = await response.json();
+      const data = json.data;
       setData(data.spotlightAnimes);
       setTop10AnimesData(data.top10Animes);
       setTrendingData(data.top10Animes.today);
@@ -31,7 +33,6 @@ const page = () => {
       setCardStackData(data.latestEpisodeAnimes);
       setGenreData(data.genres);
       setUpcomingAnimesData(data.topUpcomingAnimes);
-      console.log(process.env);
     };
     loadData();
   }, []);

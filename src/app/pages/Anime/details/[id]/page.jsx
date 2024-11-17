@@ -14,7 +14,9 @@ const AnimeDetailsPage = () => {
   const [posterSrc, setPosterSrc] = useState(null);
   useEffect(() => {
     const loadData = async () => {
-      const Data = await FetchAnimeByAniwatchID(id);
+      const json = await FetchAnimeByAniwatchID(id);
+      const Data = json.data;
+
       setData(Data);
       if (
         Data.anime.info.stats.episodes.sub > 100 ||
