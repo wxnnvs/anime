@@ -240,8 +240,9 @@ export const FetchEpisodeLinksByMappedID = async (
   category = "sub"
 ) => {
   const response = await fetch(
-    `${PROXY}${ANIWATCH_URL}episode/sources?animeEpisodeId=${id}?server=${server}&category=${category}`
+    `https://corsproxy.io/?${ANIWATCH_URL}episode/sources?animeEpisodeId=${id}?server=${server}&category=${category}`
   );
+
   const data = await response.json();
   return data;
 };

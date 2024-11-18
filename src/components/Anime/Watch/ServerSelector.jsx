@@ -52,7 +52,7 @@ const ServerSelector = ({
           <div className="flex flex-row gap-1">
             {Servers.map((server) => (
               <p
-                onClick={() => onClick("dub", server.toLowerCase())}
+                onClick={() => { onClick("dub", server.toLowerCase()); console.log("clicked dub:" + server.toLowerCase() + " " + episodeType.toLowerCase()); }}
                 className={`px-[15px] py-[5px] rounded-md ${
                   activeServer.toLowerCase() == server.toLowerCase() &&
                   episodeType == "dub"

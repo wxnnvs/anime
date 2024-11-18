@@ -30,7 +30,7 @@ const StreamingPage = () => {
   const [episodeSrc, setEpisodeSrc] = useState(null);
   const [captionsData, setCaptionsData] = useState(null);
   const [episodeLoading, setEpisodeLoading] = useState(true);
-  const [activeServer, setActiveServer] = useState("VidStream");
+  const [activeServer, setActiveServer] = useState("HD-1");
   const [episodeType, setEpisodeType] = useState("sub");
   const [lastSavedTime, setLastSavedTime] = useState(0); 
   const { addAnimeEpisode, currentlyWatching } = useUserData();
@@ -168,7 +168,7 @@ const StreamingPage = () => {
               onClick={handleServer}
               episodeType={episodeType}
               activeServer={activeServer}
-              Servers={["VidStream", "MegaCloud", "StreamSB"]}
+              Servers={["HD-1", "HD-2", "StreamSB"]}
               currentEpisode={currentEpisode}
             />
             <BasicDetails data={animeData.anime} page="Streaming" />
