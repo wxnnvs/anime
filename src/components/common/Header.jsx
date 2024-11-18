@@ -70,7 +70,8 @@ export default function Header() {
 
   const debouncedAnimeSearch = useCallback(
     debounce(async (term) => {
-      const tempAnimeData = await SearchAniWatch(term);
+      const json = await SearchAniWatch(term);
+      const tempAnimeData = json.data.animes;
       setAnimeSearchData(tempAnimeData);
     }, 300),
     []

@@ -270,7 +270,7 @@ export const SearchAniWatch = async (query) => {
   const queryUrl = `${PROXY}${ANIWATCH_URL}search?q=${query}`;
   const resp = await fetch(queryUrl);
   const data = await resp.json();
-  return data.animes;
+  return data;
 };
 export const AdvancedSearch = async (
   query,
