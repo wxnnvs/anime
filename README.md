@@ -1,12 +1,14 @@
-# 🌟 Anyme-Next 🌟
+# 🌟 Anime 🌟
 
-Welcome to **Anyme-Next** – your ultimate destination for anime and manga! 🎉 This project offers a stunningly designed and fully responsive website that combines the best of both worlds, allowing users to enjoy their favorite anime and manga in one place.
+Welcome to **Anime** – your ultimate destination for anime and manga (soon)! 🎉 This project offers a stunningly designed and fully responsive website that combines the best of both worlds, allowing users to enjoy their favorite anime and manga in one place.
+
+> based on [anyme-next](https://github.com/RyanYuuki/Anyme-Next) by [RyanYuuki](https://github.com/RyanYuuki)
 
 ---
 
-## 📝 About Anyme-Next
+## 📝 About Anime
 
-**Anyme-Next** is a sleek, modern, and highly responsive website built using the latest technologies. With a cool and user-friendly interface, it's designed to give users an immersive experience as they dive into the world of anime and manga.
+**Anime** is a sleek, modern, and highly responsive website built using the latest technologies. With a cool and user-friendly interface, it's designed to give users an immersive experience as they dive into the world of anime and manga.
 
 ### ✨ Features
 - **🚀 Super Fast**: Powered by Next.js for blazing fast performance and SSR (Server-Side Rendering).
@@ -29,28 +31,7 @@ Welcome to **Anyme-Next** – your ultimate destination for anime and manga! �
 
 ## 💻 Installation & Setup
 
-To get started with **Anyme-Next**:
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/RyanYuuki/Anyme-Next.git
-   cd Anyme-Next
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open the app in your browser:**
-   ```
-   http://localhost:3000
-   ```
+*Under construction*
 
 ---
 
@@ -66,7 +47,7 @@ To get started with **Anyme-Next**:
 
 ## 👾 Contributing
 
-Contributions are welcome! If you'd like to contribute to **Anyme-Next**, please fork the repository and create a pull request.
+Contributions are welcome! If you'd like to contribute to **Anime**, please fork the repository and create a pull request.
 
 1. **Fork the project**
 2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
@@ -78,7 +59,7 @@ Contributions are welcome! If you'd like to contribute to **Anyme-Next**, please
 
 ## 🌍 Demo
 
-Check out the live demo of **Anyme-Next** [here](https://anyme-next.vercel.app).
+Check out the live demo of **Anime** [here](https://anime-dun-ten.vercel.app).
 
 ---
 
@@ -86,15 +67,7 @@ Check out the live demo of **Anyme-Next** [here](https://anyme-next.vercel.app).
 
 If you have any questions or want to connect, feel free to reach out:
 
-- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/RyanYuuki)
-- **Email**: [rehank220358@gmail.com](mailto:rehank220358@gmail.com)
-
----
-
-## 📊 GitHub Stats
-
-![GitHub Stars](https://img.shields.io/github/stars/RyanYuuki/Anyme-Next?style=social)
-![GitHub Forks](https://img.shields.io/github/forks/RyanYuuki/Anyme-Next?style=social)
+- **Discord**: `@wxnnvs`
 
 ---
 
@@ -108,4 +81,4 @@ If you have any questions or want to connect, feel free to reach out:
 
 ---
 
-**Thanks for checking out Anyme-Next!** ✨
+**Thanks for checking out Anime!** ✨
