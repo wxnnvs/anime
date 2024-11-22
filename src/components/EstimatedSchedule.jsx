@@ -113,7 +113,7 @@ const EstimatedSchedule = () => {
         {scheduleData &&
           scheduleData.map((data) => (
             <Link
-              href={`/pages/Anime/watch/${data.id}`}
+              href={`/Anime/watch/${data.id}`}
               key={data.id}
               className="flex flex-row justify-between w-full animated p-3 border-b border-input group hover:text-indigo-400"
             >

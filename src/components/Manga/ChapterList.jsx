@@ -52,7 +52,7 @@ const ChapterList = ({ chaptersData, id }) => {
             !isGrid ? (
               <Link
                 key={chapter.id}
-                href={`/pages/Manga/read/${id}/${chapter.id}/`}
+                href={`/Manga/read/${id}/${chapter.id}/`}
                 className="flex flex-row justify-between items-center p-3 rounded-md bg-input/50 hover:bg-input animated"
               >
                 <h1 className="flex flex-col gap-2">
@@ -63,7 +63,7 @@ const ChapterList = ({ chaptersData, id }) => {
                   <Button className="flex flex-row gap-2" variant={"outline"}>
                     <FontAwesomeIcon icon={faFireAlt} /> {chapter.view}
                   </Button>
-                  <Link href={`/pages/Manga/read/${id}/${chapter.id}`}>
+                  <Link href={`/Manga/read/${id}/${chapter.id}`}>
                     <Button>Read</Button>
                   </Link>
                 </div>
@@ -71,7 +71,7 @@ const ChapterList = ({ chaptersData, id }) => {
             ) : (
               <Link
                 key={chapter.id}
-                href={`/pages/Manga/read/${id}/${chapter.id}`}
+                href={`/Manga/read/${id}/${chapter.id}`}
                 className="flex justify-center items-center w-[150px] h-[50px] rounded-md bg-input/50 hover:bg-white hover:text-black animated transition-colors duration-200"
               >
                 <h1>{strippedChapterNames[index]}</h1>

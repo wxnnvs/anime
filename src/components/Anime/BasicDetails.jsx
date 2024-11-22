@@ -43,7 +43,7 @@ const BasicDetails = ({ data, page = "Details", className }) => {
             {data.info.stats.rating}
           </p>
         </div>
-        <Link href={`/pages/Anime/watch/${data.info.id}`}>
+        <Link href={`/Anime/watch/${data.info.id}`}>
           <button
             className="p-[12px] text-[14px] max-md:text-[10px] max-md:p-2 w-full bg-neutral-700/20 box-shadow rounded-md font-semibold hover:bg-indigo-400 transition-full"
             aria-label={page === "Details" ? "Watch Now" : "More Info"}

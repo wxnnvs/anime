@@ -56,13 +56,13 @@ export default function NavigationMenuDemo() {
                   />
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/pages/Anime/" title="Popular">
+              <ListItem href="/Anime/" title="Popular">
                 Explore Popular Anime.
               </ListItem>
-              <ListItem href="/pages/Anime/" title="Trending">
+              <ListItem href="/Anime/" title="Trending">
                 Explore Trending Anime.
               </ListItem>
-              <ListItem href="/pages/Anime/" title="Random">
+              <ListItem href="/Anime/" title="Random">
                 Explore Random Anime.
               </ListItem>
             </ul>
@@ -82,13 +82,13 @@ export default function NavigationMenuDemo() {
                   />
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/pages/Manga/" title="Popular">
+              <ListItem href="/Manga/" title="Popular">
                 Explore Popular Manga.
               </ListItem>
-              <ListItem href="/pages/Manga/" title="Trending">
+              <ListItem href="/Manga/" title="Trending">
                 Explore Trending Manga.
               </ListItem>
-              <ListItem href="/pages/Manga/" title="Random">
+              <ListItem href="/Manga/" title="Random">
                 Explore Random Manga.
               </ListItem>
             </ul>

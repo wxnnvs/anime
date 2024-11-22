@@ -14,7 +14,7 @@ export function TabsDemo({ data }) {
       <Link
         key={manga.id}
         className="flex flex-row justify-left gap-3 items-center mt-5"
-        href={`/pages/Manga/details/${manga.id}`}
+        href={`/Manga/details/${manga.id}`}
       >
         <h1 className="grid place-items-center h-[50px] w-[50px] rounded-xl bg-input">
           {index + 1}

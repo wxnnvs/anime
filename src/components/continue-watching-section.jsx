@@ -88,7 +88,7 @@ export default function ContinueWatching() {
                           className="w-full aspect-video object-cover"
                         />
                         <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-                          <Link href={`/pages/Anime/watch/${anime.animeId}`}>
+                          <Link href={`/Anime/watch/${anime.animeId}`}>
                             <Button
                               size="lg"
                               variant="ghost"

@@ -44,7 +44,7 @@ export default function Component() {
             </p>
           </CardContent>
           <CardFooter>
-            <Link className="w-full" href={"/pages/Anime"}>
+            <Link className="w-full" href={"/Anime"}>
               <Button className="w-full">Explore Anime</Button>
             </Link>
           </CardFooter>
@@ -80,7 +80,7 @@ export default function Component() {
             </p>
           </CardContent>
           <CardFooter>
-            <Link className="w-full" href={"/pages/Manga"}>
+            <Link className="w-full" href={"/Manga"}>
               <Button className="w-full">Explore Manga</Button>
             </Link>
           </CardFooter>

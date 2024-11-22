@@ -66,7 +66,7 @@ export default function ReusableCarousel({ title, data, className }) {
                   <div className="flex flex-col animated justify-center p-8 items-center gap-3 text-center max-md:p-0">
                     <Link
                       className="relative carousel overflow-hidden rounded-lg group"
-                      href={`/pages/Manga/details/${item.id}`}
+                      href={`/Manga/details/${item.id}`}
                     >
                       <img
                         className="rounded-xl object-cover h-[290px] w-[230px] max-md:h-[250px]"

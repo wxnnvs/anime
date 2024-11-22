@@ -84,7 +84,7 @@ const Top10AnimesTable = ({ data }) => {
           currentData.map((data, index) => (
             <Link
               key={data.id}
-              href={`/pages/Anime/details/${data.id}`}
+              href={`/Anime/details/${data.id}`}
               className="flex flex-row items-center gap-10 group animated"
             >
               <h1 className="text-2xl w-[30px] text-center border-b-4 border-indigo-400 group-hover:text-indigo-300 transition-full">

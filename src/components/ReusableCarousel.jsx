@@ -70,7 +70,7 @@ export default function ReusableCarousel({ title, data = [], className }) {
                       href={
                         anime.type === "MANGA"
                           ? `/Manga/details/${anime.id}`
-                          : `/pages/Anime/details/${anime.id}`
+                          : `/Anime/details/${anime.id}`
                       }
                     >
                       <img

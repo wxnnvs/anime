@@ -17,7 +17,7 @@ const AnimeRelations = ({ relations }) => {
               alt={data.id}
             />
             <h1 className="absolute z-50 text-center" >{data.name}</h1>
-            <Link href={`/pages/Anime/watch/${data.id}`} className="absolute w-full h-full rounded-lg transition-full seasonCard" />
+            <Link href={`/Anime/watch/${data.id}`} className="absolute w-full h-full rounded-lg transition-full seasonCard" />
           </div>
         )) : <h1>No Season Aired Yet...</h1> }
       </div>

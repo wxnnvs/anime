@@ -68,7 +68,7 @@ export default function ReusableCarouselAlt({ title, data = [], className }) {
                       href={
                         isManga
                           ? `/Manga/details/${anime.id}`
-                          : `/pages/Anime/details/${anime.id}`
+                          : `/Anime/details/${anime.id}`
                       }
                     >
                       <img

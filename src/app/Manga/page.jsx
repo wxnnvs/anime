@@ -27,8 +27,10 @@ const Manga = () => {
   useEffect(() => {
     const loadData = async () => {
       let TableData = [];
-      const data = await FetchMangaList(1);
-      const NewData = await FetchMangaList(2);
+      const json = await FetchMangaList(1);
+      const data = json.data;
+      const NewJson = await FetchMangaList(2);
+      const NewData = NewJson.data;
       setMangaList(data.mangaList.slice(0, 11));
       setNewestData(NewData.mangaList.slice(11, 23));
       setLatestData(data.mangaList.slice(12, 23));

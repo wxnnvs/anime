@@ -116,7 +116,7 @@ const Search = () => {
           ? searchData.map((anime) => (
               <Link
                 key={anime.id}
-                href={`/pages/Anime/details/${anime.id}`}
+                href={`/Anime/details/${anime.id}`}
                 className="flex flex-col group gap-1 animated"
               >
                 <div className="relative flex items-center justify-center">

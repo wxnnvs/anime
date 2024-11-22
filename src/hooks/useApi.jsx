@@ -3,13 +3,14 @@ import { jaroWinklerDistance } from "./jaro-winkler";
 
 require("dotenv").config();
 
-const PROXY = "https://goodproxy.goodproxy.workers.dev/fetch?url=";
+const PROXY_old = "https://goodproxy.goodproxy.workers.dev/fetch?url=";
+const PROXY = "https://corsproxy.io/?";
 const apiLink = "https://consumet-brown.vercel.app/";
 const BASE_URL = "https://consumet-brown.vercel.app/" +  "meta/anilist/";
 const ANIWATCH_URL = "https://aniwatch-api-mauve.vercel.app/api/v2/hianime/";
 const API_KEY = "e2f1fb12caa883224a8363dc0329b3bc";
 const BASE_MOVIE_URL = "https://api.themoviedb.org";
-const MANGA_URL = process.env.MANGA_URL + "api/";
+const MANGA_URL = "https://mangahook-api-1.onrender.com/api/";
 
 // MOVIE
 

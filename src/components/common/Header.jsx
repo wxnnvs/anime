@@ -54,13 +54,13 @@ export default function Header() {
       active: !pathname.includes("Anime") && !pathname.includes("Manga"),
     },
     {
-      href: "/pages/Anime",
+      href: "/Anime",
       label: "Anime",
       icon: Clapperboard,
       active: pathname.includes("Anime"),
     },
     {
-      href: "/pages/Manga",
+      href: "/Manga",
       label: "Manga (coming soon)",
       icon: Book,
       active: pathname.includes("Manga"),

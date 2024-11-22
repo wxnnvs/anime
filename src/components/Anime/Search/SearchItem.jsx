@@ -9,7 +9,7 @@ import Link from "next/link";
 const AnimeItem = ({ data, handleCross }) => (
   <Link
     onClick={handleCross}
-    href={`/pages/Anime/details/${data.id}`}
+    href={`/Anime/details/${data.id}`}
     key={data.id}
     className="animated flex flex-row items-center gap-5 justify-center w-full bg-neutral-700/30 hover:bg-neutral-700/50 p-2 rounded-md box-shadow min-h-[100px]"
   >
@@ -37,7 +37,7 @@ const AnimeItem = ({ data, handleCross }) => (
 const MangaItem = ({ data, handleCross }) => (
   <Link
     onClick={handleCross}
-    href={`/pages/Manga/details/${data.id}`}
+    href={`/Manga/details/${data.id}`}
     key={data.id}
     className="animated flex flex-row items-center gap-5 justify-center w-full bg-neutral-700/30 p-2 rounded-md box-shadow min-h-[100px] hover:bg-neutral-700/10"
   >

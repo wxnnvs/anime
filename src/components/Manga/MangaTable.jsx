@@ -59,7 +59,7 @@ const ReusableStack = ({ data }) => {
                     title.length > 40 ? title.substring(0, 40) + "..." : title;
                   return (
                     <Link
-                      href={`/pages/Manga/details/${dataItem.id}`}
+                      href={`/Manga/details/${dataItem.id}`}
                       key={idx}
                       className="flex flex-row gap-3 bg-neutral-700/20 animated hover:bg-indigo-400 transition-full rounded-lg p-3 box-shadow"
                     >

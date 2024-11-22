@@ -15,13 +15,13 @@ export default function BreadcrumbWithCustomSeparator({ prevPage, currentPath, t
       <BreadcrumbList className="flex items-center justify-center" >
         <BreadcrumbItem>
           <BreadcrumbLink>
-            <Link href="/pages/Manga/">Home</Link>
+            <Link href="/Manga/">Home</Link>
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
           <BreadcrumbLink>
-            <Link href={`/pages/Manga/details/${prevPage}`}>{title}</Link>
+            <Link href={`/Manga/details/${prevPage}`}>{title}</Link>
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbSeparator />

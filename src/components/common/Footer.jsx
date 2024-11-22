@@ -23,12 +23,12 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/pages/Anime" className="hover:underline">
+                <Link href="/Anime" className="hover:underline">
                   Anime
                 </Link>
               </li>
               {/*<li>
-                <Link href="/pages/Manga" className="hover:underline">
+                <Link href="/Manga" className="hover:underline">
                   Manga
                 </Link>
               </li>*/}

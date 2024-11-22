@@ -22,7 +22,7 @@ const ReusableCardStacks = ({ data, title }) => {
       return (
         <Link
           key={manga.id}
-          href={`/pages/Manga/details/${manga.id}`}
+          href={`/Manga/details/${manga.id}`}
           className="flex flex-col"
         >
           <div className="relative flex items-center justify-center group">
@@ -48,7 +48,7 @@ const ReusableCardStacks = ({ data, title }) => {
               </p>
             </div>
             <Link
-              href={`/pages/Manga/details/${manga.id}`}
+              href={`/Manga/details/${manga.id}`}
               className="grid place-items-center h-[40px] font-semibold text-center text-wrap hover:text-indigo-300 transition-colors duration-200"
             >
               {manga.title.length > 25
@@ -57,7 +57,7 @@ const ReusableCardStacks = ({ data, title }) => {
             </Link>
             <div className="flex flex-col gap-1 mt-2 h-[70px]">
               <Link
-                href={`/pages/Manga/read/${manga.id}/chapter-${
+                href={`/Manga/read/${manga.id}/chapter-${
                   doubleCheckedChapter.split(" ")[1]
                 }`}
               >
@@ -67,7 +67,7 @@ const ReusableCardStacks = ({ data, title }) => {
               </Link>
               {!isNaN(parseInt(manga.chapter.split(" ")[1]) - 1) && (
                 <Link
-                  href={`/pages/Manga/read/${manga.id}/chapter-${
+                  href={`/Manga/read/${manga.id}/chapter-${
                     parseInt(doubleCheckedChapter.split(" ")[1]) - 1
                   }`}
                 >

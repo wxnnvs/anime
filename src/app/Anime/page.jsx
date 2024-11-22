@@ -8,7 +8,7 @@ import EstimatedSchedule from "@/components/EstimatedSchedule.jsx";
 import TopAnimesTable from "@/components/TopAnimesTable.jsx";
 import ContinueWatching from "@/components/continue-watching-section.jsx";
 import { fetchHomePage } from "@/hooks/ApiMapper.jsx";
-import { animeData } from "../../../lib/fallbackData.jsx";
+import { animeData } from "@/lib/fallbackData.jsx";
 
 const page = () => {
   const [data, setData] = useState(null);

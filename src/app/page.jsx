@@ -25,14 +25,14 @@ export default function Component() {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Link
-                    href="/pages/Anime"
+                    href="/Anime"
                     className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 dark:bg-primary dark:text-primary-foreground"
                     prefetch={false}
                   >
                     Explore Anime
                   </Link>
                   {/*<Link
-                    href="/pages/Manga"
+                    href="/Manga"
                     className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 dark:bg-background dark:border-input dark:text-foreground dark:hover:bg-accent dark:hover:text-accent-foreground"
                     prefetch={false}
                   >
@@ -85,7 +85,7 @@ export default function Component() {
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 sm:grid-cols-2 lg:gap-12">
               <Link
-                href="/pages/Anime/details/attack-on-titan-the-final-season-part-3-18329"
+                href="/Anime/details/attack-on-titan-the-final-season-part-3-18329"
                 className="group grid w-full justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 dark:bg-background dark:text-foreground dark:hover:bg-accent dark:hover:text-accent-foreground"
                 prefetch={false}
               >
@@ -105,7 +105,7 @@ export default function Component() {
                 <Button className="mt-3">Watch Now {">"}</Button>
               </Link>
               <Link
-                href="/pages/Manga/details/manga-dn980422"
+                href="/Manga/details/manga-dn980422"
                 className="group grid w-full justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 dark:bg-background dark:text-foreground dark:hover:bg-accent dark:hover:text-accent-foreground"
                 prefetch={false}
               >
@@ -145,7 +145,7 @@ export default function Component() {
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 sm:grid-cols-2 lg:gap-12">
               <Link
-                href="/pages/Anime/details/one-piece-100"
+                href="/Anime/details/one-piece-100"
                 className="group grid w-full justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 dark:bg-background dark:text-foreground dark:hover:bg-accent dark:hover:text-accent-foreground"
                 prefetch={false}
               >
@@ -165,7 +165,7 @@ export default function Component() {
                 <Button className="mt-3">Watch Now {">"}</Button>
               </Link>
               <Link
-                href="/pages/Manga/details/manga-to970571"
+                href="/Manga/details/manga-to970571"
                 className="group grid w-full justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 dark:bg-background dark:text-foreground dark:hover:bg-accent dark:hover:text-accent-foreground"
                 prefetch={false}
               >

@@ -41,14 +41,14 @@ export default function Drawer() {
               </Link>
             </SheetClose>
             <SheetClose asChild>
-              <Link href={`/pages/Anime/`}>
+              <Link href={`/Anime/`}>
                 <span>
                   <FontAwesomeIcon className="mr-2" icon={faClapperboard} /> Anime
                 </span>
               </Link>
             </SheetClose>
             <SheetClose asChild>
-              <Link href={`/pages/Manga/`}>
+              <Link href={`/Manga/`}>
                 <span>
                   <FontAwesomeIcon className="mr-2" icon={faBook} /> Manga
                 </span>

@@ -27,7 +27,7 @@ const BasicDetails = ({ data, id }) => {
           />
           <Link
             className="w-full max-md:hidden"
-            href={`/pages/Manga/read/${id}/chapter-1`}
+            href={`/Manga/read/${id}/chapter-1`}
           >
             <Button className="w-full">Read Now</Button>
           </Link>

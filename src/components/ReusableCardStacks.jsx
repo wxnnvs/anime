@@ -56,7 +56,7 @@ const ReusableCardStacks = ({ withGenres, genresData, data, title }) => {
           {data.map((anime) => (
             <Link
               key={anime.id}
-              href={`/pages/Anime/details/${anime.id}`}
+              href={`/Anime/details/${anime.id}`}
               className="flex flex-col gap-1 group"
             >
               <div className="relative flex items-center justify-center w-[173px] max-sm:w-[150px]">
@@ -102,7 +102,7 @@ const ReusableCardStacks = ({ withGenres, genresData, data, title }) => {
           <div className="grid grid-cols-3 auto-rows-max gap-2 p-5 bg-neutral-700/30 rounded-md">
             {genresData.map((genre) => (
               <Link
-                href={`/pages/Anime/search/${genre}`}
+                href={`/Anime/search/${genre}`}
                 key={genre}
                 className="p-2 rounded-md"
                 style={{ filter: "brightness(1.2)" }}

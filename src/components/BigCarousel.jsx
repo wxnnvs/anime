@@ -64,12 +64,12 @@ export default function BigCarousel({ data }) {
                     : item.description}
                 </p>
                 <div className="flex flex-row gap-5">
-                  <Link href={`/pages/Anime/watch/${item.id}`}>
+                  <Link href={`/Anime/watch/${item.id}`}>
                     <Button className="flex flex-row gap-1 px-[18px] py-[8px] max-md:py-[0px] max-md:px-[10px] rounded-3xl transition-all duration-500 hover:scale-110 active:scale-75 bg-white text-black">
                       <FontAwesomeIcon icon={faPlay} /> Watch Now
                     </Button>
                   </Link>
-                  <Link href={`/pages/Anime/details/${item.id}`}>
+                  <Link href={`/Anime/details/${item.id}`}>
                     <Button className="flex flex-row gap-1 text-base px-[18px] py-[10px] max-md:px-[10px] max-md:py-[10px] bg-white/20 text-white rounded-3xl hover:bg-indigo-400 hover:text-white transition-all duration-500 hover:scale-110 active:scale-75">
                       <FontAwesomeIcon icon={faInfoCircle} /> Detail
                     </Button>
